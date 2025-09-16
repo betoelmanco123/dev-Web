@@ -4,9 +4,7 @@ body {
   text-align: center;
   transition: 0.5s;
 }
-h1 {
-  color: red;
-}
+
 h2 {
   color: purple;
 }
@@ -19,28 +17,36 @@ a {
   text-decoration: underline;
   font-weight: bold;
 }
-.color-button {
-  background-color: salmon;
-  top: 20px;
-  right: 20px;
-  font-size: 16px;
-  cursor: pointer;
-  color: blue;
-  position: absolute;
-}
-.color-button:hover {
-  background-color: aqua;
-}
-.language-button {
-  background-color: rgb(114, 132, 250);
-  top: 20px;
-  right: 300px;
-  font-size: 16px;
-  cursor: pointer;
-  color: blue;
-  position: absolute;
-}
-.language-button:hover {
-  background-color: aqua;
+.header {
+  background-color: #333;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  position: sticky;
+  height: 7%;
+  align-items: center;
+  text-align: left;
+
 }
 
+.header button {
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  background-color: salmon;
+  font-size: 14px;
+  border-radius: 5px;
+  height: 80%;
+}
+.header button:hover {
+  background-color: aqua;
+}
+.header .name{
+  color: white;
+  font-size: 50px;
+  font-size: bold;
+}
+.content {
+  padding: 20px;
+}
